@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Student Feedback Survey</h1>
+  <p id="description">We value your feedback! Please fill out the form below.</p>
+
+  <form id="survey-form">
+
+    <!-- Name Input -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <!-- Email Input -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+
+    <!-- Number Input -->
+    <label id="number-label" for="number">Age (optional):</label>
+    <input id="number" type="number" placeholder="Enter your age" min="10" max="100">
+
+    <!-- Dropdown -->
+    <label for="dropdown">Which option best describes your role?</label>
+    <select id="dropdown">
+      <option value="">Select your role</option>
+      <option value="student">Student</option>
+      <option value="professional">Professional</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>Would you recommend us to a friend?</p>
+    <label><input type="radio" name="recommend" value="yes"> Yes</label>
+    <label><input type="radio" name="recommend" value="no"> No</label>
+
+    <!-- Checkboxes -->
+    <p>What did you like about the course? (Check all that apply)</p>
+    <label><input type="checkbox" name="liked" value="content"> Content</label>
+    <label><input type="checkbox" name="liked" value="instructor"> Instructor</label>
+    <label><input type="checkbox" name="liked" value="assignments"> Assignments</label>
+
+    <!-- Textarea -->
+    <p>Any comments or suggestions?</p>
+    <textarea placeholder="Enter your comments here..."></textarea>
+
+    <!-- Submit -->
+    <br>
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
